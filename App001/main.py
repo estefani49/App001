@@ -23,6 +23,18 @@ def main(page: ft.Page):
                             width=100,
                             height=50)
     
+    def no(e):
+        btnSi.width+=30
+        btnNo.height+=30
+        page.update()
+        
+    def si(e):
+        Img1.src="feliz.png"
+        page.update()
+        
+    btnSi.on_click=si
+    btnNo.on_click=no
+    
     page.add(
         ft.Column(
             [
